@@ -77,6 +77,7 @@ h6 {
     /* primary */
     --clr-pale-blue: hsl(225, 100%, 94%);
     --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-light-blue: hsl(245, 83%, 69%);
 
     /* secondary */
     --clr-very-pale-blue: hsl(225, 100%, 98%);
@@ -117,8 +118,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    max-width: 28.125rem;
 }
-
 
 .main {
     display: grid;
@@ -139,7 +140,6 @@ body {
 
 .hero__p {
     line-height: 1.75rem;
-    padding: 1rem;
 }
 
 
@@ -153,8 +153,12 @@ body {
     border-radius: 1rem;
 }
 
-.plan a {
+.plan__a {
     color: var(--clr-bright-blue);
+}
+.plan__a:hover {
+    color: var(--clr-light-blue);
+    text-decoration: none;
 }
 
 .plan__choice {
@@ -176,7 +180,6 @@ body {
 .payment {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     padding: 1rem;
     font-weight: var(--fw-bold);
 }
@@ -189,8 +192,26 @@ body {
     padding: 1rem;
 }
 
+.payment__btn:hover {
+    background-color: var(--clr-light-blue);
+}
+
 .payment__cancel {
     border: none;
     background: none;
     color: var(--clr-desaturated-blue);
+}
+
+.payment__cancel:hover {
+    color: var(--clr-dark-blue);
+}
+
+@media (min-width: 46.875rem) {
+    .main {
+        padding: 3.125rem;
+    }
+
+    .payment__btn {
+        margin-top: 0.625rem;
+    }
 }
