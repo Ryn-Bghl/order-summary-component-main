@@ -101,7 +101,7 @@ body {
     font-weight: var(--fw-normal);
     font-size: var(--fz-body);
     background-color: var(--clr-pale-blue);
-    color: var(--clr-dark-blue);
+    color: var(--clr-desaturated-blue);
     padding: 1.5rem 1rem;
 }
 
@@ -109,8 +109,39 @@ body {
     border-radius: 1rem;
     background-color: #fff;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .main {
-    padding: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-very-pale-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.payment__btn {
+    padding: 1rem;
+}
+
+.payment__cancel {
+    border: none;
+    background: none;
+    color: var(--clr-desaturated-blue);
 }
