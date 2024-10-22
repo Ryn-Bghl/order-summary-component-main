@@ -98,10 +98,11 @@ h6 {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 20.4375rem;
     font-family: var(--ff-primary);
     font-weight: var(--fw-normal);
     font-size: var(--fz-body);
@@ -110,7 +111,6 @@ body {
 }
 
 .wrapper {
-    margin: 4.375rem 1.5rem;
     position: relative;
     border-radius: 1rem;
     background-color: #fff;
