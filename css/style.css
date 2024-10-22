@@ -105,9 +105,12 @@ body {
     padding: 1.5rem 1rem;
 }
 
-main {
+.wrapper {
     border-radius: 1rem;
     background-color: #fff;
     overflow: hidden;
 }
 
+.main {
+    padding: 2rem;
+}
