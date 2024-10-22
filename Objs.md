@@ -9,6 +9,8 @@
 
   - [x] find all the required informations (30min)
 
+- [ ] link the CSS file(s) to the HTML file(s) (25 sec)
+
 - [x] add the header section
 
   - [x] add the header img

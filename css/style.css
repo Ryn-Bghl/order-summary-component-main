@@ -96,6 +96,18 @@ h6 {
     --fw-bold: 900;
 }
 
-img {
-    width: min-content;
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-normal);
+    font-size: var(--fz-body);
+    background-color: var(--clr-pale-blue);
+    color: var(--clr-dark-blue);
+    padding: 1.5rem 1rem;
 }
+
+main {
+    border-radius: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
