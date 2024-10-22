@@ -9,7 +9,7 @@
 
   - [x] find all the required informations (30min)
 
-- [ ] link the CSS file(s) to the HTML file(s) (25 sec)
+- [x] link the CSS file(s) to the HTML file(s) (25 sec)
 
 - [x] add the header section
 
@@ -27,13 +27,13 @@
 
 (10min)
 
-- [ ] add the css reset
-- [ ] add the custom properites the to globals.css file
-- [ ] style the hero img
-- [ ] style the hero title
-- [ ] style the hero paragraph
+- [x] add the css reset
+- [x] add the custom properites the to globals.css file
+- [x] style the hero img
+- [x] style the hero title
+- [x] style the hero paragraph
 
-- [ ] style the payment button
-- [ ] style the cancel order button
+- [x] style the payment button
+- [x] style the cancel order button
 
-## FINISH
+## FINISH Mobile version (2h later)
