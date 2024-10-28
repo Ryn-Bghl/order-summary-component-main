@@ -78,6 +78,7 @@ h6 {
   --clr-pale-blue: hsl(225, 100%, 94%);
   --clr-bright-blue: hsl(245, 75%, 52%);
   --clr-light-blue: hsl(245, 83%, 69%);
+  --clr-bright-blue-trans: rgba(56, 41, 224, 0.25);
 
   /* secondary */
   --clr-very-pale-blue: hsl(225, 100%, 98%);
@@ -186,9 +187,9 @@ body {
 }
 
 .payment__btn {
-  -webkit-box-shadow: -1px 33px 80px -18px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 33px 80px -18px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 15px -2.5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 10px 15px -2.5px var(--clr-bright-blue-trans);
+  -moz-box-shadow: 0px 10px 15px -2.5px var(--clr-bright-blue-trans);
+  box-shadow: 0px 10px 15px -2.5px var(--clr-bright-blue-trans);
   background-color: var(--clr-bright-blue);
   color: var(--clr-very-pale-blue);
   border: none;
