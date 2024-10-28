@@ -2,19 +2,19 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 2. Remove default margin */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 5. Improve media defaults */
@@ -23,8 +23,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
@@ -32,7 +32,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* 7. Avoid text overflows */
@@ -43,12 +43,12 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* 8. Improve line wrapping */
 p {
-    text-wrap: pretty;
+  text-wrap: pretty;
 }
 
 h1,
@@ -57,8 +57,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 1rem;
-    text-wrap: balance;
+  font-size: 1rem;
+  text-wrap: balance;
 }
 
 /*
@@ -66,152 +66,157 @@ h6 {
   */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 :root {
-    /* @media */
-    --desktop-width: 1440px;
-    --mobile-width: 375px;
+  /* @media */
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
 
-    /* primary */
-    --clr-pale-blue: hsl(225, 100%, 94%);
-    --clr-bright-blue: hsl(245, 75%, 52%);
-    --clr-light-blue: hsl(245, 83%, 69%);
+  /* primary */
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-light-blue: hsl(245, 83%, 69%);
 
-    /* secondary */
-    --clr-very-pale-blue: hsl(225, 100%, 98%);
-    --clr-desaturated-blue: hsl(224, 23%, 55%);
-    --clr-dark-blue: hsl(223, 47%, 23%);
+  /* secondary */
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
 
+  /* fz */
+  --fz-body: 1rem;
+  --fz-header: 1.5rem;
 
-    /* fz */
-    --fz-body: 1rem;
-    --fz-header: 1.5rem;
+  /* ff */
+  --ff-primary: "Red Hat Display", sans-serif;
 
-    /* ff */
-    --ff-primary: 'Red Hat Display', sans-serif;
-
-    /* fw */
-    --fw-normal: 500;
-    --fw-semi-bold: 700;
-    --fw-bold: 900;
+  /* fw */
+  --fw-normal: 500;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
 }
 
 body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 20.4375rem;
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-normal);
-    font-size: var(--fz-body);
-    background-color: var(--clr-pale-blue);
-    color: var(--clr-desaturated-blue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 20.4375rem;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-normal);
+  font-size: var(--fz-body);
+  background-color: var(--clr-pale-blue);
+  color: var(--clr-desaturated-blue);
 }
 
 .wrapper {
-    position: relative;
-    border-radius: 1rem;
-    background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    max-width: 28.125rem;
+  position: relative;
+  border-radius: 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 28.125rem;
 }
 
 .main {
-    display: grid;
-    padding: 1.5rem;
-    gap: 1.5rem;
+  display: grid;
+  padding: 1.5rem;
+  gap: 1.5rem;
 }
 
 .hero__title,
 .hero__p {
-    text-align: center;
+  text-align: center;
 }
 
 .hero__title {
-    font-size: var(--fz-header);
-    color: var(--clr-dark-blue);
-    line-height: 1;
+  font-size: /* var(--fz-header) */ 1.75rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark-blue);
+  line-height: 1;
 }
 
 .hero__p {
-    line-height: 1.75rem;
+  line-height: 1.75rem;
 }
 
-
 .plan {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--clr-very-pale-blue);
-    padding: 1rem;
-    border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-very-pale-blue);
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 .plan__a {
-    color: var(--clr-bright-blue);
+  font-weight: var(--fw-bold);
+  font-size: 0.875rem;
+  color: var(--clr-bright-blue);
 }
 .plan__a:hover {
-    color: var(--clr-light-blue);
-    text-decoration: none;
+  color: var(--clr-light-blue);
+  text-decoration: none;
 }
 
 .plan__choice {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info h2 {
-    color: var(--clr-dark-blue);
+  color: var(--clr-dark-blue);
 }
 
 .payment {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    font-weight: var(--fw-bold);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-weight: var(--fw-bold);
 }
 
 .payment__btn {
-    background-color: var(--clr-bright-blue);
-    color: var(--clr-very-pale-blue);
-    border: none;
-    border-radius: 1rem;
-    padding: 1rem;
+  -webkit-box-shadow: -1px 33px 80px -18px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 33px 80px -18px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 15px -2.5px rgba(0, 0, 0, 0.25);
+  background-color: var(--clr-bright-blue);
+  color: var(--clr-very-pale-blue);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .payment__btn:hover {
-    background-color: var(--clr-light-blue);
+  background-color: var(--clr-light-blue);
 }
 
 .payment__cancel {
-    border: none;
-    background: none;
-    color: var(--clr-desaturated-blue);
+  font-weight: var(--fw-bold);
+  border: none;
+  background: none;
+  color: var(--clr-desaturated-blue);
 }
 
 .payment__cancel:hover {
-    color: var(--clr-dark-blue);
+  color: var(--clr-dark-blue);
 }
 
 @media (min-width: 46.875rem) {
-    .main {
-        padding: 3.125rem;
-    }
+  .main {
+    padding: 3.125rem;
+  }
 
-    .payment__btn {
-        margin-top: 0.625rem;
-    }
+  .payment__btn {
+    margin-top: 0.625rem;
+  }
 }
