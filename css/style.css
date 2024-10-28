@@ -112,6 +112,9 @@ body {
 }
 
 .wrapper {
+  -webkit-box-shadow: 0px 10px 15px -2.5px var(--clr-bright-blue-trans);
+  -moz-box-shadow: 0px 10px 15px -2.5px var(--clr-bright-blue-trans);
+  box-shadow: 0px 10px 15px -2.5px var(--clr-bright-blue-trans);
   position: relative;
   border-radius: 1rem;
   background-color: #fff;
